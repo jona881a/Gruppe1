@@ -1,9 +1,57 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[danish]{babel}
 \usepackage[utf8]{inputenc}
-\begin{document}
+\usepackage{amsmath}
+\usepackage{graphicx}
 
-Hello World!
-How are you
+\begin{document}
+\title{Boblesortering}
+\author{
+   Lars Atex, s010101
+   \and
+   Søren Tudent, s020202}
+\date{1. oktober 2018}
+\maketitle
+
+\begin{abstract}
+Dette dokument omhandler boblesortering. Der beskrives algoritmen og præsenteres en kompleksitetsanalyse.
+\end{abstract}
+
+\section{Introduktion}
+Boblesortering (eng. bubble sort) er en populær sorteringsalgoritme og er en af de simpleste algoritmer at forstå og implementere. Dog er den ikke en særlig effektiv sorteringsalgoritme1; hverken for store eller små lister, og den anvendes sjældent i praksis. Boblesortering sorterer, som navnet antyder, elementerne i en liste ved at boble hvert element gennem listen til sin rette plads i listen.
+
+\subsection{Pseudokode}
+Wikipedia \cite{2} giver følgende pseudokode for boblesortering.
+
+\begin{verbatim}
+procedure bubbleSort( A : list of sortable items ) defined as:
+  do
+    swapped := false
+    for each i in 0 to length(A) - 2 inclusive do:
+      if A[i] > A[i+1] then
+        swap( A[i], A[i+1] )
+        swapped := true
+      end if end for
+    while swapped
+end procedure
+\end{verbatim}
+En illustration af en kørsel af boblesortering fra Wikipedia kan ses på figur 1.
+
+
+
+
+
+\begin{thebibliography}{2}
+
+\bibitem{1}
+ Donald Knuth,
+ \textit{The Art of Computer Programming, Volume 3.}
+ Addison- Wesley.
+
+\bibitem{2}
+ \textit{http://en.wikipedia.org/wiki/Bubble_sort}
+
+\end{thebibliography}
+
 
 \end{document}
