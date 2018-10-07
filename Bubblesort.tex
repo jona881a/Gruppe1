@@ -22,7 +22,7 @@ Dette dokument omhandler boblesortering. Der beskrives algoritmen og præsentere
 \end{abstract}
 
 \section{Introduktion}
-Boblesortering \textit{(eng. bubble sort)} er en populær \textit{sorteringsalgoritme} og er en af de simpleste algoritmer at forstå og implementere. Dog er den ikke en særlig effektiv sorteringsalgoritme\footnote{Mere om dette i "Algoritmer og Datastrukturer 1}; hverken for store eller små lister, og den anvendes sjældent i praksis. Boblesortering sorterer, som navnet antyder, elementerne i en liste ved at \textit{boble} hvert element gennem listen til sin rette plads i listen.
+Boblesortering \textit{(eng. bubble sort)} er en populær \textit{sorteringsalgoritme} og er en af de simpleste algoritmer at forstå og implementere. Dog er den ikke en særlig effektiv sorteringsalgoritme\footnote{Mere om dette i "Algoritmer og Datastrukturer 1"}; hverken for store eller små lister, og den anvendes sjældent i praksis. Boblesortering sorterer, som navnet antyder, elementerne i en liste ved at \textit{boble} hvert element gennem listen til sin rette plads i listen.
 
 \subsection{Pseudokode}
 Wikipedia \cite{WikiBubble} giver følgende pseudokode for boblesortering.
@@ -42,12 +42,36 @@ end procedure
 En illustration af en kørsel af boblesortering fra Wikipedia kan ses på figur 1.
 
 \section{Analyse af bobblesortering}
-Antallet af sammenligninger, som boblesortering udfører på en tabel af længde \emph{n},
+Antallet af sammenligninger, som boblesortering udfører på en tabel af længde \(n\),
 er i værste fald
 \[ 
 \displaystyle\sum_{i=1}^{n-1} i = 1 + 2 + 3 + \cdots + n - 1 = \frac{n(n - 1)}{2}
 \]
-I bedste fald er antallet af \emph{n} - 1. Se tabel 1.
+I bedste fald er antallet af \(n-1\). Se tabel 1.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\linewidth]{Bubblesort.png}
+	\caption{Illustration af boblesortering.}
+\end{figure}
+
+\begin{table}[h!]
+	\begin{center}
+		
+		\label{tab:table1}
+		\begin{tabular}{|c|l|} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+			\hline
+			\textbf{Værst} & \(n(n - 1)/2\)\\
+			\hline
+			\textbf{Bedst} & \(n-1\) \\
+			\hline
+		\end{tabular}
+	
+	\end{center}
+	\caption{Antal sammenligninger for boblesortering.}
+\end{table}
+
+
 
 \begin{thebibliography}{99}
 
