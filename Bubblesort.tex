@@ -39,7 +39,7 @@ procedure bubbleSort( A : list of sortable items ) defined as:
     while swapped
 end procedure
 \end{verbatim}
-En illustration af en kørsel af boblesortering fra Wikipedia kan ses på figur 1.
+En illustration af en kørsel af boblesortering fra Wikipedia kan ses på figur \ref{fig:bubblesort}.
 
 \section{Analyse af bobblesortering}
 Antallet af sammenligninger, som boblesortering udfører på en tabel af længde \(n\),
@@ -47,7 +47,7 @@ er i værste fald
 \[ 
 \displaystyle\sum_{i=1}^{n-1} i = 1 + 2 + 3 + \cdots + n - 1 = \frac{n(n - 1)}{2}
 \]
-I bedste fald er antallet af \(n-1\). Se tabel 1.
+I bedste fald er antallet af \(n-1\). Se tabel \ref{tab:boblesammenligninger}.
 
 \begin{figure}
 	\centering
@@ -58,8 +58,6 @@ I bedste fald er antallet af \(n-1\). Se tabel 1.
 
 \begin{table}[h!]
 	\begin{center}
-		
-		\label{tab:table1}
 		\begin{tabular}{|c|l|} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
 			\hline
 			\textbf{Værst} & \(n(n - 1)/2\)\\
@@ -67,9 +65,9 @@ I bedste fald er antallet af \(n-1\). Se tabel 1.
 			\textbf{Bedst} & \(n-1\) \\
 			\hline
 		\end{tabular}
-	
 	\end{center}
 	\caption{Antal sammenligninger for boblesortering.}
+	\label{tab:boblesammenligninger}
 \end{table}
 
 \section{Videre læsning}
