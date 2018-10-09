@@ -32,13 +32,13 @@ if [[ $# -ne 1 ]]; then
 # If the input is a single number, carry on
 else
 	i=0
-	result=0
+	result=1
 
 	# -le is used to check for less than or equal to because
 	# it can handle comparing integers and strings
 	while [[ $result -le $1 ]]; do
-		result=`tritri $i`
 		echo $result
+		result=`tritri $i`
 		i=$[$i + 1]
 	done
 fi
