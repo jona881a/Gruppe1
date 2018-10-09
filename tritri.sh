@@ -31,7 +31,7 @@ if [[ $# -ne 1 ]]; then
 
 # If the input is a single number, carry on
 else
-	i=0
+	i=1
 	result=1
 
 	# -le is used to check for less than or equal to because
